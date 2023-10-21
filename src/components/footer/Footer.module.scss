@@ -1,0 +1,31 @@
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content{
+        display: flex;
+        text-align: right;
+        color: #0088a7;
+        padding: 10px;
+    }
+    .text{
+        line-height: 1.5;
+    }
+    .link{
+        color: #25a5ac;
+        text-decoration: none;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    .link:hover{
+        color: #0088a7;
+    }
+
+}
+

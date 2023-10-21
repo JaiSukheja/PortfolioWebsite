@@ -1,0 +1,86 @@
+$color-black: #000;
+$color-white: #ffffff;
+.circularProgressBar{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10px;
+}
+
+.progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black;
+  position: relative;
+  width: 170px;
+  height: 170px;
+  transform: rotate(135deg);
+  border-radius: 50%;
+
+}
+
+.progressbar__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: var(--stroke-dashoffset);
+  stroke: rgb(240, 238, 238);
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  filter: drop-shadow(0 5px 5px #0088a7);
+  animation:  2s progressbar ease-in-out;
+}
+
+
+
+
+.progressbar__text {
+    font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.25em 0.5em;
+  color: $color-white;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%) rotate(-270deg);
+  font-weight: 500;
+    text-shadow: 0 0 10px #25a5ac;
+}
+
+.skillName{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0088a7;
+  letter-spacing: 2px;
+}
+
+@keyframes progressbar {
+  0% {
+    stroke-dashoffset: 440;
+    // stroke-dashoffset: var(--stroke-dashoffset);
+  }
+  25%{
+    stroke-dashoffset: 300;
+  }
+  50%{
+    stroke-dashoffset: 200;
+  }
+  75%{
+    stroke-dashoffset: 100;
+    
+  }
+  100% {
+    // stroke-dashoffset: 50;
+  }
+}

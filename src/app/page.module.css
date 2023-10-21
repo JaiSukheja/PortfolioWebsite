@@ -1,0 +1,10 @@
+.app{
+    background-color: black;
+    color: white;
+}
+.singleSection{
+    min-height: max-content;
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
+    padding-top: 100px;
+}

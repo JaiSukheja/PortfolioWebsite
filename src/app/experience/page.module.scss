@@ -1,0 +1,103 @@
+.experience{
+  width: 90%;
+  min-height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column ;
+  margin: 0 auto;
+  .heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+    .highlight{
+      color: #25a5ac;
+    }
+    hr{
+      width: 12%;
+      height: 2px;
+      background-color: #fff;
+      border: none;
+      margin: 10px 0;
+    }
+  }
+  .ExperienceContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    .Experience{
+      width: 48%;
+      border: 3px solid #fff;
+      padding: 1.2rem;
+      border-radius: 10px;
+      .ExperienceTop{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+        .ExperienceIcon{
+          font-size: 4rem;
+          color: #25a5ac;
+          box-shadow: #25a5ac 1px 1px 2px 0px, #0088a7 -1px -1px 2px 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          padding: 10px;
+        }
+      }
+      .ExperienceTitle{
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #25a5ac;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 100%;
+      }
+      .ExperiencePosition{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: left;
+        width: 100%;
+      }
+      .ExperienceDuration{
+        font-size: 1rem;
+        color: #969595;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .ExperienceContent{
+        font-size: 1.2rem;
+        color: #fff;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 10px;
+        .ExperienceContentItem{
+          display: flex;
+          // align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          margin-bottom: 10px;
+          i{
+            font-size: 1.3rem;
+            padding-top: 2px;
+            color: #25a5ac;
+          }
+        }
+      }
+
+    }
+  }
+}

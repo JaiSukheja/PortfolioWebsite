@@ -1,0 +1,106 @@
+.photo-frame {
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+    background: #000;
+    /* cursor: grab; */
+    border-radius: 4px;
+    box-shadow: #0088a7 1px 1px 1px 1px, #25a5ac -1px -1px 1px 1px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.galleryHead{
+    font-size: 4rem;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.photo-frame, .photo-frame img {
+    outline: none;
+    touch-action: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    /* cursor: grab; */
+}
+
+.photo-frame.overlay {
+    cursor: grabbing;
+}
+
+.photo-frame.active, .photo-frame.active img {
+    opacity: 0.3;
+}
+
+.photo-frame.insertBefore:before, .photo-frame.insertAfter:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 4px
+}
+
+.react-photo-album--row .photo-frame.insertBefore:before, .react-photo-album--row .photo-frame.insertAfter:after {
+    top: 0;
+    bottom: 0;
+    width: 4px;
+}
+
+.react-photo-album--row .photo-frame.insertBefore:before {
+    left: -17px;
+}
+
+.react-photo-album--row .photo-frame.insertAfter:after {
+    right: -17px
+}
+
+.react-photo-album--column .photo-frame.insertBefore:before, .react-photo-album--column .photo-frame.insertAfter:after {
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.react-photo-album--column .photo-frame.insertBefore:before {
+    top: -17px;
+}
+
+.react-photo-album--column .photo-frame.insertAfter:after {
+    bottom: -17px;
+}
+
+
+
+.photoDetails{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+}
+.skill{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+.instituteDate{
+    display: flex;
+    align-items: center;    
+}
+
+.institute{
+    font-size: 1rem;
+    color: #1fa1ad;
+    &::after{
+        content: "/";
+        font-size: 1rem;
+        color: #fff;
+        padding: 0 0.2rem;
+    };
+}
+.date{
+    font-size: 0.8rem;
+    color: #1aa0ff;
+}
