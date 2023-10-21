@@ -14,43 +14,58 @@ const projects = [
     id:1,
     title: 'Connectify',
     description: 'A Realtime Chat Application where users can create account and chat with each other',
-    techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-javascript'></i>,<i className='bx bxl-sass' ></i>],
+    techstack: {
+      id:1, 
+      icons: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-javascript'></i>,<i className='bx bxl-sass' ></i>]
+    },
     image: projectImage,
     github: "https://github.com/JaiSukheja/Connectify-App",
     live: ""
   },
   {
-    id:3,
+    id:2,
     title: 'Instagram Clone',
     description: 'A social media platform where users can create account, post pictures, like and comment on other posts',
-    techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-css3' ></i>],
+    techstack: {
+      id:2,
+      icons: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-css3' ></i>]
+      },
     image: instagram,
     github: "https://github.com/JaiSukheja/instagram-clone",
     live: ""
   },
   {
-    id:4,
+    id:3,
     title: 'TODO List',
     description: 'A Web-App where users can add, delete and update their tasks',
-    techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-tailwind-css' ></i>],
+    techstack: {
+      id:3,
+      icons: [<i className='bx bxl-react' ></i>, <i className='bx bxl-tailwind-css' ></i>]
+    },
     image: todo,
     github: "https://github.com/JaiSukheja/TodoList",
     live: ""
   },
   {
-    id:5,
+    id:4,
     title: 'Wordle Game',
     description: 'A Word Game where you have to guess the word by looking at the hints provided along with every guess',
-    techstack: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>],
+    techstack: {
+      id:4,
+      icons: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>]
+    },
     image: wordle,
     github: "https://github.com/JaiSukheja/Mini-Games",
     live: "",
   },
   {
-    id:6,
+    id:5,
     title: 'Netflix Landing Page',
     description: 'A Responsive Landing Page of Netflix ',
-    techstack: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>],
+    techstack: {
+      id:5,
+      icons: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>]
+    },
     image: netflix,
     github: "https://github.com/JaiSukheja/Netflix-Landing-Page",
     live: ""
@@ -81,8 +96,8 @@ const Projects = () => {
               <div className={styles.Techstack}>
                 <span className={styles.highlight}>
                   Techstack:
-                  {project.techstack.map((tech, index) => (
-                    <span key={index}>{tech}</span>
+                  {project.techstack.icons.map((tech, index) => (
+                    <span key={index}>{tech}</span> // eslint-disable-line react/jsx-key
                   ))}
                   </span>
               </div>
