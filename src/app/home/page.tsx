@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+"use client"
+import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { Cursor } from 'react-simple-typewriter'
