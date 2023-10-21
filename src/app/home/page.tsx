@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
@@ -13,7 +12,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.container}>
-        <div className={styles.title}> Hi, I'm</div>
+        <div className={styles.title}> Hi, I`&apos;`m</div>
         <div className={styles.mainTitle}>
           Jai Sukheja
         </div>
@@ -28,7 +27,7 @@ const Home = () => {
           <Cursor />
         </div>
         <div className={styles.tagline}>
-          I'm a dedicated learner aspiring to leverage my
+          I`&apos;`m a dedicated learner aspiring to leverage my
           skills in technology for a fulfilling career. With a
           passion for growth, I
           aim to contribute meaningfully to the tech

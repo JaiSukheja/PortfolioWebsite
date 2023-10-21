@@ -11,6 +11,7 @@ import Link from 'next/link'
 
 const projects = [
   {
+    id:1,
     title: 'Connectify',
     description: 'A Realtime Chat Application where users can create account and chat with each other',
     techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-javascript'></i>,<i className='bx bxl-sass' ></i>],
@@ -19,6 +20,7 @@ const projects = [
     live: ""
   },
   {
+    id:3,
     title: 'Instagram Clone',
     description: 'A social media platform where users can create account, post pictures, like and comment on other posts',
     techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-nodejs' ></i>, <i className='bx bxl-mongodb' ></i>, <i className='bx bxl-css3' ></i>],
@@ -27,6 +29,7 @@ const projects = [
     live: ""
   },
   {
+    id:4,
     title: 'TODO List',
     description: 'A Web-App where users can add, delete and update their tasks',
     techstack: [<i className='bx bxl-react' ></i>, <i className='bx bxl-tailwind-css' ></i>],
@@ -35,6 +38,7 @@ const projects = [
     live: ""
   },
   {
+    id:5,
     title: 'Wordle Game',
     description: 'A Word Game where you have to guess the word by looking at the hints provided along with every guess',
     techstack: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>],
@@ -43,6 +47,7 @@ const projects = [
     live: "",
   },
   {
+    id:6,
     title: 'Netflix Landing Page',
     description: 'A Responsive Landing Page of Netflix ',
     techstack: [<i className='bx bxl-html5' ></i>, <i className='bx bxl-css3' ></i>, <i className='bx bxl-javascript' ></i>],
@@ -62,7 +67,7 @@ const Projects = () => {
       </div>
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
-          <div className={styles.project} key={index}>
+          <div className={styles.project} key={project.id}>
             <div className={styles.imageContainer}>
               <Image src={project.image} alt="Project 1" width={300} height={300} />
             </div>
