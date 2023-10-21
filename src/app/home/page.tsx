@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.container}>
-        <div className={styles.title}> Hi, I`&apos;`m</div>
+        <div className={styles.title}> Hi, I&apos;m</div>
         <div className={styles.mainTitle}>
           Jai Sukheja
         </div>
@@ -28,7 +28,7 @@ const Home = () => {
           <Cursor />
         </div>
         <div className={styles.tagline}>
-          I`&apos;`m a dedicated learner aspiring to leverage my
+          I&apos;m a dedicated learner aspiring to leverage my
           skills in technology for a fulfilling career. With a
           passion for growth, I
           aim to contribute meaningfully to the tech

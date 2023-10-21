@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <div className={styles.heading}>
-        Let`&apos;`s <span className={styles.highlight}>connect</span>
+        Let&apos;s <span className={styles.highlight}>connect</span>
         <hr />
       </div>
       <div className={styles.contactContainer}>

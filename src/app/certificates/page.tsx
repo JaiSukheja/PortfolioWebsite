@@ -18,7 +18,7 @@ const Extra = [
     { src: "/Certificate_of_Participation_Data_Analysis.jpg",institute:"JIMS",date:"Jul 2022",skill:"Data Analysis", width: 1080, height: 720 },
     { src: "/Certificate_of_Participation_Rapid_Coding.jpg",institute:"JIMS",date:"Jul 2022",skill:"Competitive Programming", width: 1080, height: 720 },
     { src: "/Webion.jpg",institute:"MAIT",date:"Nov 2022",skill:"Frontend Development", width: 1080, height: 720 },
-    { src: "/hackWithMait.jpg",institute:"MAIT",date:"Dec 2022",skill:"Hackathon", width: 1080, height: 720 },
+    { src: "/HackWithMait.jpg",institute:"MAIT",date:"Dec 2022",skill:"Hackathon", width: 1080, height: 720 },
 
 
 ];
